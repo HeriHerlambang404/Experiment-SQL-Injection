@@ -24,6 +24,6 @@ Mari kita bedah bagian kodenya:
 
 OR 1=1: Ini adalah logika matematika yang selalu benar (True). Karena menggunakan operator OR, sistem tidak lagi peduli apakah username-nya benar atau salah. Selama salah satu syaratnya benar (dalam hal ini 1=1), maka seluruh pernyataan dianggap benar.
 
-# (atau -- di beberapa database): Ini adalah simbol komentar. Simbol ini memerintahkan database untuk mengabaikan semua kode yang ada di belakangnya. Jadi, pengecekan password yang asli (AND password = ...) dihapus dari perintah.
+(atau -- di beberapa database): Ini adalah simbol komentar. Simbol ini memerintahkan database untuk mengabaikan semua kode yang ada di belakangnya. Jadi, pengecekan password yang asli (AND password = ...) dihapus dari perintah.
 
 4. Hasil AkhirnyaKarena database melihat perintah tersebut sebagai "Cari user yang usernamenya kosong ATAU yang 1 sama dengan 1", dan karena $1=1$ selalu benar, database akan mengembalikan data pengguna pertama yang ia temukan (biasanya akun Admin).Sistem login kemudian mengira kamu berhasil melakukan autentikasi dan langsung membukakan pintu masuk.
